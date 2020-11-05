@@ -13,6 +13,7 @@
             <div class="card">
                 <p id={{i}}>quote: "{{quote.quote}}" <br> by: {{quote.author}} <br> submitted
                     by:{{quote.submittedBy}} <br> since :{{quote.since|date|uppercase}}</p>
+                    <button (click)='toggleDetails(i)' class="btn btn-dark" >View more</button>
             </div>
 
         </div>

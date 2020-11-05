@@ -1,1 +1,7 @@
-<p>quote-detail works!</p>
+<div class="text-center container">
+    <button type="button"  click ="quoteDelete(true)"     class="btn btn-danger">Delete</button>
+    <button  class="btn btn-outline-success" (click)='upVote($event)'> {{quote.upVote}} <i
+        class="fa fa-thumbs-up" aria-hidden="true"></i></button>
+        <button class="btn btn-outline-success" (click)='downVote($event)'> {{quote.downVote}} <i
+            class="fa fa-thumbs-up" aria-hidden="true"></i></button>
+</div>
