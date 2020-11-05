@@ -1,18 +1,25 @@
 <div class="container-fluid">
-    <div class="intro">
-        <h1>Welcome to Quote corner</h1>
+  <div class="intro">
+    <h1>Welcome to Quote corner</h1>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    </div>
+    <div class="col-md-6">
+        <div *ngFor='let quote of quotes;let i = index'>
+            <div class="card">
+                <p id={{i}}>quote: "{{quote.quote}}" <br> by: {{quote.author}} <br> submitted
+                    by:{{quote.submittedBy}} <br> since :{{quote.since|date|uppercase}}</p>
+            </div>
+
+        </div>
 
     </div>
-<div class="row">
-    <div class="col-md-6">
-    <app-quote-form></app-quote-form>
-</div>
 
-
-
-
-
-
+  </div>
 
 </div>
 
@@ -28,4 +35,3 @@
 
 
 
-</div>
