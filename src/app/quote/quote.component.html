@@ -10,12 +10,18 @@
     </div>
     <div class="col-md-6">
         <div *ngFor='let quote of quotes;let i = index'>
+          <br>
+          <br>
             <div class="card">
                 <p id={{i}}>quote: "{{quote.quote}}" <br> by: {{quote.author}} <br> submitted
                     by:{{quote.submittedBy}} <br> since :{{quote.since|date|uppercase}}</p>
-                    <button (click)='toggleDetails(i)' class="btn btn-dark" >View more</button>
+                    <!-- <button style="margin-left:20px; width: 100px;" class="btn btn-outline-warning" (click)='downVote($event)'>{{quote.downVote}} <i
+                      class="fa fa-thumbs-down" aria-hidden="true"></i></button> -->
+                    <button (click)='toggleDetails(i)' class="btn btn-dark" >Review</button>
             </div>
-
+            <div *ngIf='quote.showDescription'>
+              <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>
+          </div>
         </div>
 
     </div>
