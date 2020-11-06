@@ -14,7 +14,7 @@
           <br>
             <div class="card">
                 <p id={{i}}>quote: "{{quote.quote}}" <br> by: {{quote.author}} <br> submitted
-                    by:{{quote.submittedBy}} <br> since :{{quote.since|date|uppercase}}</p>
+                    by:{{quote.submittedBy}} <br> since :{{quote.since|dateCount}} days ago</p>
                     <!-- <button style="margin-left:20px; width: 100px;" class="btn btn-outline-warning" (click)='downVote($event)'>{{quote.downVote}} <i
                       class="fa fa-thumbs-down" aria-hidden="true"></i></button> -->
                     <button (click)='toggleDetails(i)' class="btn btn-dark" >Review</button>

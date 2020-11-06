@@ -8,6 +8,10 @@ export class Quote {
         public author: string, 
         public submittedBy: string, 
         public since: Date){
-    this.showDescription=false;}
+    this.showDescription=false;
+    this.upVote=0;
+    this.downVote=0;
+
+}
 }
 
