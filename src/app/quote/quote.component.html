@@ -29,12 +29,13 @@
 
   </div>
 
-  <div class="favourite">
+  <div class="favourite" >
     <button (click)='highLikes()' class="btn btn-dark" >Favourite</button>
-    <div class="card">
+    <br>
+    <br>
+    <div class="card" appHighlight>
       <div *ngIf='highLikes'>
-        <p id={{i}}>quote: "{{quote}}" <br> by: {{author}} <br> submitted
-          by:{{submittedBy}} <br> since :{{since|dateCount}} days ago</p>
+        <p id={{i}}>{{quote}} <br>{{author}} <br>{{submittedBy}} <br>{{since}}</p>
 
       </div>
 
