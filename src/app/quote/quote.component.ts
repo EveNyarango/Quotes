@@ -9,10 +9,10 @@ export class QuoteComponent implements OnInit {
 
  
   quotes: Quote[] = [
-    new Quote('My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style ', 'Maya Angelou ', 'Eve', new Date(2020, 11, 5)),
-    new Quote('Its easy to pretend to be fierce and fearless because living your truth takes real courage ', 'Erica Knowles', 'Eve', new Date(2010, 11, 14)),
-    new Quote('Growth is a series of mistakes ', 'Steve Harvey', 'Eve', new Date(2020, 12, 14)),
-    new Quote('And the day came when the risk to remain tight in a bud was more painful than the risk it took to blossom ', 'Eve Nyarango ', 'Eve', new Date(2010, 11, 14))
+    new Quote('My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style ', 'Maya Angelou ', 'Eve', new Date(2021, 11, 5)),
+    new Quote('Its easy to pretend to be fierce and fearless because living your truth takes real courage ', 'Erica Knowles', 'Eve', new Date(2021, 1, 14)),
+    new Quote('Growth is a series of mistakes ', 'Steve Harvey', 'Eve', new Date(2021, 10, 8)),
+    new Quote('And the day came when the risk to remain tight in a bud was more painful than the risk it took to blossom ', 'Eve Nyarango ', 'Eve', new Date(2021, 8, 22))
   ];
   addNewQuote(quote){ 
     let quoteLength = this.quotes.length;
