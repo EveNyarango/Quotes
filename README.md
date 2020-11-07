@@ -2,8 +2,21 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
-## Development server
+## Author
+Eve Nyarang'o
 
+## Description
+This projects provides a platform where you can view quotes; add quote; Like, dislike and delete quotes; And check favourite quote.
+
+## Project image
+![Eve](src/assets/s.shot1.png)
+## BDD
+Enter quote
+Enter Author
+Enter submit name
+Enter submit date
+
+## Installation Requirement
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
@@ -14,13 +27,19 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Technologies used
+This page was created using HTML, Angular CLI, BOOTSTRAP and CSS.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Link
+https://github.com/EveNyarango/Quotes
 
-## Running end-to-end tests
+ ## Contact Information
+ Email; evenyarango@gmail.com
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+ ## License and copyright
+ MIT [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Copyright (C) **{Eve Nyarang'o}
 
 ## Further help
 
