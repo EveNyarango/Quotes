@@ -7,3 +7,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+.card{
+    margin-bottom: 20px;
+    /* background-color: palevioletred; */
+}

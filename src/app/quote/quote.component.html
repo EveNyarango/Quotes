@@ -9,7 +9,7 @@
 
       <div class="col-md-6" *ngFor='let quote of quotes;let i = index'>
        <div class="card">
-        <div class="card-body">
+        <div class="card-body" >
           <p id={{i}}>quote: "{{quote.quote}}" <br> by: {{quote.author}} <br> submitted
             by:{{quote.submittedBy}} <br> since :{{quote.since|dateCount}} days ago</p>
 
@@ -29,7 +29,7 @@
     </div>
     <div class="col-md-6">
       <div class="favourite">
-        <button (click)='highLikes()' class="btn btn-dark">Favourite</button>
+        <button (click)='highLikes()' class="btn btn-dark">Check Favourite Quote</button>
         <br>
         <br>
         <div class="card" appHighlight>
