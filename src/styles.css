@@ -9,5 +9,10 @@ body{
 }
 .card{
     margin-bottom: 20px;
-    /* background-color: palevioletred; */
+    background-color:turquoise;
+    opacity: 0.9;
+}
+.jumbotron{
+    background-color:turquoise;
+    opacity: 0.9;
 }
