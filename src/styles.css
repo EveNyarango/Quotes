@@ -1,2 +1,9 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+
+body{
+    background-image:url("src/assets/backie4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

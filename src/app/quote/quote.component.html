@@ -4,10 +4,11 @@
 
   </div>
 
-
-  <div class="row">
+<div id="sato">
+  <div class="row" >
 
       <div class="col-md-6" *ngFor='let quote of quotes;let i = index'>
+       <div class="card">
         <div class="card-body">
           <p id={{i}}>quote: "{{quote.quote}}" <br> by: {{quote.author}} <br> submitted
             by:{{quote.submittedBy}} <br> since :{{quote.since|dateCount}} days ago</p>
@@ -18,9 +19,10 @@
         <div *ngIf='quote.showDescription'>
           <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>
         </div>
-
+      </div>
       </div>
   </div>
+</div>
   <div class="row">
     <div class="col-md-6">
       <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>

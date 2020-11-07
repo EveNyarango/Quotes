@@ -14,7 +14,7 @@ export class QuoteComponent implements OnInit {
     new Quote('Growth is a series of mistakes ', 'Steve Harvey', 'Eve', new Date(2020, 12, 14)),
     new Quote('And the day came when the risk to remain tight in a bud was more painful than the risk it took to blossom ', 'Eve Nyarango ', 'Eve', new Date(2010, 11, 14))
   ];
-  addNewQuote(quote){
+  addNewQuote(quote){ 
     let quoteLength = this.quotes.length;
     quote.id = quoteLength + 1; 
     quote.completeDate = new Date(quote.completeDate)
