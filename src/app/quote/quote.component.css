@@ -13,3 +13,9 @@ h1{
 .intro{
     color: palevioletred;
 }
+.card {
+    margin-bottom: 20px;
+    opacity: 0.9;
+    background-color:turquoise;
+  }
+  
